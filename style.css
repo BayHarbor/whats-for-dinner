@@ -46,6 +46,7 @@ body {
     background-color: #10173a;
     padding: 5px;
     border-radius: 10px;
+    margin-top: 5px;
 }
 .search-btn {
     border: 0;
@@ -62,17 +63,22 @@ body {
 .row {
     display: flex;
     flex-flow: row wrap;
-    width: 90%;
-    margin: 7px;
+    width: 100%;
+    margin-top: 5px;
 }
 
 .block  {
-    padding: 5px;
+    padding: 10px;
     width: 50%;
     overflow-y: auto;
     min-height: 80px;
     color: #31708E;
     background-color: #e8eef1;
-    max-height: 225px;
+    max-height: 180px;
     border-radius: 10px;
+}
+
+.picture {
+    text-align: center;
+    overflow-y: hidden;
 }
