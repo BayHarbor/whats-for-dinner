@@ -22,11 +22,12 @@ body {
 
 .header {
     display: flex;
-    flex-direction: column;
     color: white;
     background-color: #10173a;
     padding: 5px;
     border-radius: 10px;
+    height: 45px;
+    justify-content: flex-end;
 }
 
 .title {
@@ -36,12 +37,19 @@ body {
     width: 100%;
     display: flex; 
     justify-content: center;
+    margin-top: 21px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
-.search {
-    display: flex;
-    align-items: right;
-    justify-content: right;
+.fa-icon {
+    position: absolute;
+    padding-top: 10px;
+    padding-right: 7px;
+    color: #10173a;
 }
 
 .footer {
@@ -51,11 +59,9 @@ body {
     border-radius: 10px;
     margin-top: 5px;
 }
-
 .search-btn {
     border: 0;
     border-radius: 10px;
-    outline: none;
 }
 
 .random-btn {
@@ -79,15 +85,11 @@ body {
     min-height: 80px;
     color: #31708E;
     background-color: #e8eef1;
-    max-height: 35vh;
+    max-height: 180px;
     border-radius: 10px;
 }
 
 .picture {
     text-align: center;
     overflow-y: hidden;
-}
-
-.fa-icon {
-    color: pink;
 }
