@@ -39,10 +39,8 @@ body {
     justify-content: center;
     margin-top: 21px;
     position: absolute;
-    top: 0;
-    bottom: 0;
+    line-height: 0;
     right: 0;
-    left: 0;
 }
 
 .fa-icon {
@@ -50,6 +48,11 @@ body {
     padding-top: 10px;
     padding-right: 7px;
     color: #10173a;
+    cursor: pointer;
+}
+
+.the-meal {
+    font-weight: bold;
 }
 
 .footer {
@@ -62,6 +65,8 @@ body {
 .search-btn {
     border: 0;
     border-radius: 10px;
+    outline:none;
+    cursor: pointer;
 }
 
 .random-btn {
@@ -69,6 +74,8 @@ body {
     border-radius: 10px;
     border: none;
     padding: 5px;
+    outline:none;
+    cursor: pointer;
 }
 
 .row {

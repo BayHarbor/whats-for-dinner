@@ -2,7 +2,9 @@ const imageElement = document.getElementById("picture");
 const ingredientsElement = document.getElementById("ingredients");
 const stepsElement = document.getElementById("steps");
 const theMealElement = document.getElementById("the-meal");
-const buttonElement = document.getElementById("random-btn");
+const randomBtnElement = document.getElementById("random-btn");
+const searchElement = document.getElementById("search-box");
+const searchIconElement = document.getElementById("search-icon");
 
 async function getMeal() {
     const resp = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
@@ -75,8 +77,16 @@ async function getMealCategories() {
     // console.log(theCategories[Math.floor(Math.random() * theCategories.length)]["strCategory"]);
 }
 
+function searchForTerm() { 
+    if(searchElement.value && searchElement.value != ''){
+        console.log("Searched: " + searchElement.value);
+    }
+}
+
 getMeal();
 // getMealCategories();
 
 // Listen for button clicks
-buttonElement.addEventListener("click", getMeal);
+randomBtnElement.addEventListener("click", getMeal);
+// searchElement.addEventListener("click", searchForTerm);
+searchIconElement.addEventListener("click", searchForTerm);
